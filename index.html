@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyAbes – A Club of One</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 selection:bg-black selection:text-white">
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 64 64" role="img" aria-label="OnlyAbes mark">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0%" stop-color="#111" />
+              <stop offset="100%" stop-color="#555" />
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="12" fill="url(#g)" />
+          <path d="M20 44L32 16l12 28m-20-6h16" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="font-semibold tracking-tight">OnlyAbes</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm text-neutral-600">
+        <a class="hover:text-black" href="#about">About</a>
+        <a class="hover:text-black" href="#features">Features</a>
+        <a class="hover:text-black" href="#faq">FAQ</a>
+      </nav>
+      <a href="#join" class="inline-flex items-center rounded-full border border-neutral-900 px-4 py-1.5 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">Join the Club</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="mx-auto max-w-6xl px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight">Poor Abe’s <span class="italic">Only</span> Club</h1>
+        <p class="mt-6 text-neutral-600 leading-relaxed max-w-prose">
+          A tongue‑in‑cheek society where membership requirements are refreshingly simple: your name is Abe. That’s it. One name. One club. Infinite vibes.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a id="join" href="#faq" class="inline-flex items-center rounded-full bg-black text-white px-5 py-2.5 text-sm font-medium hover:opacity-90">
+            Request Invitation
+          </a>
+          <a href="#about" class="inline-flex items-center rounded-full border border-neutral-300 px-5 py-2.5 text-sm font-medium hover:bg-neutral-50">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="relative mx-auto w-full max-w-sm">
+        <div class="relative aspect-[3/4] rounded-2xl shadow-2xl">
+          <svg class="absolute inset-0 w-full h-full" viewBox="0 0 600 800" role="img" aria-label="OnlyAbes Handbook cover">
+            <defs>
+              <linearGradient id="cG" x1="0" x2="1">
+                <stop offset="0%" stop-color="#0b0b0b" />
+                <stop offset="100%" stop-color="#2a2a2a" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="800" rx="28" fill="url(#cG)" />
+            <text x="300" y="180" text-anchor="middle" font-size="40" fill="#d6d6d6" letter-spacing="4">ONLYABES</text>
+            <text x="300" y="260" text-anchor="middle" font-size="72" fill="#ffffff" font-weight="700">HANDBOOK</text>
+            <line x1="150" y1="300" x2="450" y2="300" stroke="#fff" stroke-width="1" opacity="0.4" />
+            <text x="300" y="360" text-anchor="middle" font-size="18" fill="#cfcfcf">The collected habits, heuristics,</text>
+            <text x="300" y="390" text-anchor="middle" font-size="18" fill="#cfcfcf">and in‑jokes of a club of one.</text>
+            <rect x="90" y="550" width="420" height="140" rx="12" fill="#111" opacity="0.9" />
+            <text x="300" y="610" text-anchor="middle" font-size="22" fill="#fff" font-weight="600">By Abe, for Abes</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-4xl px-4 py-16">
+      <blockquote class="text-2xl md:text-3xl leading-snug tracking-tight">
+        <span class="block">“Wisdom of the crowd?”</span>
+        <span class="block">We prefer the crowd of one.</span>
+      </blockquote>
+      <p class="mt-6 text-neutral-600 max-w-prose">
+        OnlyAbes is a playful homage to exclusive clubs and heavyweight handbooks—except our bylaws fit on a sticky note. If your legal name is Abe (or you carry Abe‑energy in your heart), you’ll feel right at home.
+      </p>
+    </section>
+
+    <section id="features" class="mx-auto max-w-6xl px-4 py-20">
+      <h2 class="text-3xl font-semibold tracking-tight">What makes OnlyAbes… OnlyAbes</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-200 p-6 shadow-sm bg-white">
+          <div class="text-sm uppercase tracking-widest text-neutral-500">Feature 1</div>
+          <div class="mt-2 text-xl font-medium">A One‑Name Membership</div>
+          <p class="mt-3 text-neutral-600">Eligibility is simple: if your name is Abe, you’re already over‑qualified.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 p-6 shadow-sm bg-white">
+          <div class="text-sm uppercase tracking-widest text-neutral-500">Feature 2</div>
+          <div class="mt-2 text-xl font-medium">Serious About Not Taking Ourselves Seriously</div>
+          <p class="mt-3 text-neutral-600">An elegant brand, a wry smile. We’re satire with stationery.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 p-6 shadow-sm bg-white">
+          <div class="text-sm uppercase tracking-widest text-neutral-500">Feature 3</div>
+          <div class="mt-2 text-xl font-medium">Handbook‑First Culture</div>
+          <p class="mt-3 text-neutral-600">A living document of practical heuristics and gentle mischief.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-neutral-50/70 py-20">
+      <div class="mx-auto max-w-4xl px-4">
+        <h2 class="text-3xl font-semibold tracking-tight">FAQ</h2>
+        <div class="mt-8 divide-y divide-neutral-200 border border-neutral-200 rounded-2xl bg-white">
+          <details class="group p-6">
+            <summary class="cursor-pointer list-none font-medium flex items-center justify-between">
+              <span>Do I have to be named Abe?</span>
+              <span class="text-neutral-400 group-open:rotate-45 transition">+</span>
+            </summary>
+            <p class="mt-3 text-neutral-600">Officially, yes. Unofficially… if your friends already call you Abe, we can talk.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="cursor-pointer list-none font-medium flex items-center justify-between">
+              <span>What do members do?</span>
+              <span class="text-neutral-400 group-open:rotate-45 transition">+</span>
+            </summary>
+            <p class="mt-3 text-neutral-600">Swap heuristics, share good books, send postcards, and practice being delightfully singular.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="cursor-pointer list-none font-medium flex items-center justify-between">
+              <span>Is this a parody?</span>
+              <span class="text-neutral-400 group-open:rotate-45 transition">+</span>
+            </summary>
+            <p class="mt-3 text-neutral-600">It’s a lovingly original homage to elegant book‑launch pages. No trademarks or copyrighted content are used here.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-neutral-600 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 64 64" role="img" aria-label="OnlyAbes mark">
+          <rect x="2" y="2" width="60" height="60" rx="12" fill="#111" />
+          <path d="M20 44L32 16l12 28m-20-6h16" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div>
+          <div class="font-medium text-neutral-900">OnlyAbes</div>
+          <div class="text-neutral-500">A club of one, open to many.</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <a class="hover:text-black" href="#">Terms</a>
+        <a class="hover:text-black" href="#">Privacy</a>
+        <a class="hover:text-black" href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
